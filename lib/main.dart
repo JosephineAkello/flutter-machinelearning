@@ -1,11 +1,29 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(MLflutter());
 }
 
-class MyApp extends StatelessWidget{
+class MLflutter extends StatefulWidget{
+  createState(){
+    return MLflutterState();
+  }
+}
+class MLflutterState extends State<MLflutter>{
   Widget build(context){
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.red,
+        accentColor: Colors.tealAccent
+      ),
+      title: 'Flutter + ML',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter + ML'),
+        ),
+      ),
+    )
+    ;
   }
 }
