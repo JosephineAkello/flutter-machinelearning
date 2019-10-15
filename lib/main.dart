@@ -42,17 +42,30 @@ class MLflutterState extends State<MLflutter> {
         appBar: AppBar(
           title: Text('Flutter + ML'),
         ),
+        body: showBody(_file),
         floatingActionButton: FloatingActionButton(
           onPressed: () async {
-            var file = await ImagePicker.pickImage(
-              source: ImageSource.gallery );
+            var file = await ImagePicker.pickImage(source: ImageSource.gallery);
             setState(() {
-              _file= file;
+              _file = file;
+            });
+            var face = await detector.detectFromBinary(
+                _file?.readAsBytesSync(), options);
+            setState(() {
+              if (face.isEmpty) {
+                print('No face detected');
+              } else {
+                _face = face;
+              }
             });
           },
+          child: new Icon(Icons.tag_faces),
         ),
-        body: showBody(_file),
       ),
     );
+  }
+
+  Widget showBody(File file) {
+    return Container();
   }
 }
