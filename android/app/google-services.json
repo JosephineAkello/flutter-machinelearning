@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917026726067",
+    "firebase_url": "https://machinelearning-flutter.firebaseio.com",
+    "project_id": "machinelearning-flutter",
+    "storage_bucket": "machinelearning-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917026726067:android:83cf34010bb6c78e7550c6",
+        "android_client_info": {
+          "package_name": "com.example.machinelearning_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917026726067-ioh06t558n0jeh47ukrc8luthb2koffh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg7HGdfA_8wC_OBGw0NygxW1NG3_8QvEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917026726067-ioh06t558n0jeh47ukrc8luthb2koffh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
