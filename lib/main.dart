@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mlkit/mlkit.dart';
+import 'dart:io';
 
 void main(){
   runApp(MLflutter());
@@ -10,6 +12,20 @@ class MLflutter extends StatefulWidget{
   }
 }
 class MLflutterState extends State<MLflutter>{
+File _file;
+List<VisionFace> _face = <VisionFace>[];
+
+VisionFaceDetectorOptions options = VisionFaceDetectorOptions(
+  modeType: VisionFaceDetectorMode.Accurate,
+  landmarkType: VisionFaceDetectorLandmark.All,
+  classificationType: VisionFaceDetectorClassification.All,
+  minFaceSize: 0.15,
+  isTrackingEnabled: true,
+  
+);
+
+FirebaseVisionTextDetector detector = FirebaseVisionTextDetector.instance;
+
   Widget build(context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
