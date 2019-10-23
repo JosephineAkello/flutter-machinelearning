@@ -1,16 +1,33 @@
-# machinelearning_flutter
+# Flutter + ML
 
-A new Flutter project.
+This is a flutter project that intergrates firebase machine learning kit face detection model into a flutter app
+
 
 ## Getting Started
+To contribute to this project, fork the repo, then clone the forked repo from your github account
 
-This project is a starting point for a Flutter application.
+$git clone https://github.com/JosephineAkello/flutter-machinelearning.git 
 
-A few resources to get you started if this is your first Flutter project:
+To install dependencies run
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    $flutter packages get or flutter pub get
+        
+To analyze the project run:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    $flutter analyze
+
+To run the project:
+
+    $flutter run
+
+To clean the project run:
+
+    $flutter clean
+
+To build apk run:
+
+    $flutter build apk
+
+For getting started with Flutter you can check my article 
+[Get started](https://medium.com/podiihq/how-to-get-started-on-fun-flutter-699c81c89a8f)
+
