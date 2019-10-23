@@ -31,3 +31,7 @@ To build apk run:
 For getting started with Flutter you can check my article 
 [Get started](https://medium.com/podiihq/how-to-get-started-on-fun-flutter-699c81c89a8f)
 
+## Screenshot
+<div align="center">
+    <img src="/screenshoot.jpg" width="400px"</img> 
+</div>
